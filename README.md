@@ -21,7 +21,7 @@ pip install pygame
 ## Usage
 
 ```bash
-python Car_Game.py
+python car_game.py
 ```
 
 The program asks for your name, then shows a **numbered menu** (help levels, start, exit). Choose **5** to start the graphical run. Close the window to stop.
@@ -40,19 +40,21 @@ The program asks for your name, then shows a **numbered menu** (help levels, sta
 
 | File | Role |
 |------|------|
-| `Rafal_Factory.csv` | Factory / maze map |
-| `ZAC15107943.txt` | Session log (append) |
+| `factory_map.csv` | Factory / maze map |
+| `session_log.txt` | Session log (append) |
 
 ## Project structure
 
 | Path | Role |
 |------|------|
-| `Car_Game.py` | Entry: menu, pygame loop, logging |
-| `genMaze.py` | Maze load, window, rendering |
+| `car_game.py` | Entry: menu, pygame loop, logging |
+| `gen_maze.py` | Maze load, window, rendering |
 | `car.py` | Car movement |
-| `Library_File_1.py` | Input helpers and log I/O |
-| `Library_File_Help.py` | Printed help text |
-| `Rafal_Factory.csv` | Map data |
+| `session_io.py` | Input prompts and append-only session log |
+| `help_text.py` | Printed help text for the menu |
+| `factory_map.csv` | Map data |
+
+All Python modules use **snake_case** file names (PEP 8).
 
 ## Stack
 

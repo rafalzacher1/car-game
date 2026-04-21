@@ -1,4 +1,7 @@
+# Car entity: grid position, movement, collisions, and track/station readings.
+
 import time
+
 
 class Car:
     line = 0
